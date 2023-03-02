@@ -1,0 +1,95 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+}
+
+.firstSection {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.secondSection {
+    display: flex;
+    height: 3rem;
+    gap: 50px;
+    width: 100%;
+    justify-content: center;
+}
+
+.separator {
+    width: 50%;
+}
+
+.input {
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid #808080;
+    width: 100%;
+    padding: 0;
+}
+
+.inputRequired {
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid red;
+    width: 100%;
+    padding: 0;
+}
+
+.inputRequired::placeholder {
+    color: red;
+}
+
+.requiredMessage {
+    color: red;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.button {
+    width: 150px;
+    height: 40px;
+    border: 0;
+    border-radius: 30px;
+    color: #fff;
+    background-color: royalblue;
+}
+
+.button:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+
+@media only screen and (max-width: 750px) {
+    .firstSection {
+        height: 300px;
+        gap: 0;
+        row-gap: 10px;
+    }
+
+    .secondSection {
+        height: 100%;
+        flex-direction: column;
+        gap: 0;
+        justify-content: space-around;
+    }
+
+    .input,
+    .inputRequired {
+        margin-bottom: 10px;
+    }
+
+    .separator {
+        width: 100%;
+    }
+
+    .requiredMessage {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+}
